@@ -10,6 +10,7 @@
             </nav>
             <router-view></router-view>
             <!-- /.content -->
+
         </div>
     </main>
   </div>
@@ -17,10 +18,21 @@
 
 <script>
   import SiteHeader from './components/Header.vue'
-export default {
-  components: {
-    SiteHeader
+  import { db } from './firebase'
+  export default {
+    data(){
+      return{
+        answers_bd: []
+      }
+    },
+    components: {
+      SiteHeader
+    },
+    firestore(){
+      return {
+        answers_bd: db.collection('marks').orderBy('mark_name')
+      }
+    }
   }
-}
 </script>
 
