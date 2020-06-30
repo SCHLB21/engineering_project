@@ -32,6 +32,11 @@
       return {
         answers_bd: db.collection('marks').orderBy('mark_name')
       }
+    },
+    mounted(){
+      if(!sessionStorage['member_id']){
+        sessionStorage['member_name']='Аноним'
+      }
     }
   }
 </script>

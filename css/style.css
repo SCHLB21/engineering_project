@@ -130,6 +130,29 @@
           justify-content: flex-start;
 }
 
+.login, .registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.login form, .registration form {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
 .header {
   border-bottom: 1px solid #6f6f6f;
 }
@@ -162,6 +185,11 @@
   margin-right: 26px;
   border: none;
   outline: none;
+}
+
+.header__personal-account button a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .main {
@@ -286,6 +314,11 @@
 .main .content__questions .question__headline {
   font-size: 24px;
   font-weight: 400;
+  color: #00489c;
+}
+
+.main .content__questions .question__headline a {
+  text-decoration: none;
   color: #00489c;
 }
 

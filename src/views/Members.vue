@@ -25,6 +25,16 @@ export default {
       return {
         members: db.collection('members').orderBy('member_name')
       }
+    },
+    methods:{
+        // addMember: function(){
+        //     alert('Добавлен');
+        //     const member_id = Math.random().toString(36).substr(2, 12);
+        //     const member_name = 'Сунгур Гасанов';
+        //     const member_password = 'qwerty';
+        //     const member_status = 'editor';
+        //     db.collection('members').add({member_id, member_name, member_password, member_status})
+        // }
     }
 }
 </script>

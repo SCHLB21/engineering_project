@@ -3,6 +3,9 @@ import Router from 'vue-router';
 import Questions from '../views/Questions';
 import Marks from '../views/Marks';
 import Members from '../views/Members';
+import Question from '../views/Question';
+import Login from '../views/personal_account/login';
+import Registration from '../views/personal_account/registration';
 
 Vue.use(Router);
 
@@ -26,7 +29,21 @@ export default new Router({
             path: '/marks',
             name: 'Marks',
             component: Marks
+        },
+        {
+            path: '/question/:id',
+            name: 'Question',
+            component: Question
+        },
+        {
+            path: '/login',
+            name: 'Login',
+            component: Login
+        },
+        {
+            path: '/registration',
+            name: 'Registration',
+            component: Registration
         }
-
     ]
 })

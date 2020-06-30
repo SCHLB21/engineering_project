@@ -12,9 +12,9 @@
             </div>
             <!-- header__search -->
             <div class="header__personal-account">
-                <button class="personal-account__button">Войти</button> 
+                <button class="personal-account__button"><router-link to="/login">Войти</router-link></button> 
                 <!-- /.personal-account__button -->
-                <button class="personal-account__button">Регистрация</button> 
+                <button class="personal-account__button"><router-link to="/registration">Регистрация</router-link></button> 
                 <!-- /.personal-account__button -->
             </div>
             <!-- /.header__personal-account -->
