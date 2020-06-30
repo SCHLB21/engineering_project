@@ -2,7 +2,7 @@
     <div class="content">
         <div class="login">
             <h1 class="login__headline">Вход</h1>
-            <form action="/#">
+            <form>
                 <label for="login">Введите логин</label>
                 <input 
                 v-model="member_name"
@@ -15,7 +15,7 @@
                 type="password" 
                 id="password"
                 >
-                <button v-on:click="login(members);">Войти</button>
+                <button type="button" v-on:click="login(members);">Войти</button>
             </form>
         </div>
     </div>
@@ -40,11 +40,17 @@ export default {
     methods: {
         login: function(members){
             for(let i=0;i<members.length;i++){
-                if(members.member_name==this.member_name && members.member_password==this.member_password){
+                if(members[i].member_name==this.member_name && members[i].member_password==this.member_password){
                     window.location.href = '#/';
+                    sessionStorage['member_name'] = members[i].member_name;
+                    sessionStorage['member_id'] = members[i].member_id;
+                    sessionStorage['member_status'] = members[i].member_status;
+                    alert('Вход выполнен успешно!')
                 }
             }
-            console.log(members)
+            if(!sessionStorage['member_id']){
+                alert('Данные введены неверно')
+            }
         }
     }
 }
