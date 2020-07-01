@@ -464,4 +464,10 @@
   background-color: #0083fd;
   outline: none;
 }
+
+@media print {
+  header, nav, textarea, .add-answer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
