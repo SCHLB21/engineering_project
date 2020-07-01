@@ -330,6 +330,10 @@
 .main .content__questions .question__description {
   font-size: 18px;
   font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .main .content__questions .question__mark {
