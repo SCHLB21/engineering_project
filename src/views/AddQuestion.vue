@@ -27,8 +27,8 @@
                 rows="10" 
                 placeholder="Введите вопрос"
                 ></textarea><br>
-                <button type="button" v-on:click="addQuestion();">Задать вопрос</button>
             </form>
+            <button type="button" v-on:click="addQuestion();">Задать вопрос</button>
         </div>
     </div>
 </template>
