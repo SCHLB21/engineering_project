@@ -396,4 +396,72 @@
 .members__list .member__name {
   font-weight: 400;
 }
+
+.login h1, .registration h1 {
+  font-weight: 400;
+}
+
+.login form input, .registration form input {
+  outline: none;
+  padding: 10px 5px;
+  border: 1px solid #6f6f6f;
+  border-radius: 5px;
+}
+
+.login form label, .registration form label {
+  margin: 5px 0;
+}
+
+.login form button, .registration form button {
+  height: 100%;
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  background-color: #0083fd;
+  outline: none;
+}
+
+.question__content-headline, .question__content-description {
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+.answer__description {
+  border-top: 1px solid #6f6f6f;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.answer__information {
+  padding-left: 20px;
+  color: #6f6f6f;
+}
+
+.answers__headline {
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+.add-answer {
+  padding-left: 20px;
+}
+
+.add-answer h2 {
+  font-weight: 400;
+}
+
+.add-answer button {
+  height: 100%;
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  background-color: #0083fd;
+  outline: none;
+}
 /*# sourceMappingURL=style.css.map */

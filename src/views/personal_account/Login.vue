@@ -8,12 +8,14 @@
                 v-model="member_name"
                 type="text" 
                 id="login"
+                placeholder="Логин"
                 >
                 <label for="password">Введите пароль</label>
                 <input 
                 v-model="member_password" 
                 type="password" 
                 id="password"
+                placeholder="Пароль"
                 >
                 <button type="button" v-on:click="login(members);">Войти</button>
             </form>

@@ -12,7 +12,7 @@
             </div>
             <div class="add-answer">
                 <h2 class="your">Ваш ответ</h2>
-                <textarea v-model="answer_text" name="add-answer" id="add-answer" cols="40" rows="10"></textarea>
+                <textarea v-model="answer_text" name="add-answer" id="add-answer" cols="40" rows="10"></textarea><br>
                 <button v-on:click="addAnswer();">Отправить ответ</button>    
             </div>
         </div>

@@ -1,7 +1,7 @@
 <template>
     <header class="header page__header">
         <div class="container header-wrap">
-            <div class="header__logo">
+            <div class="animate__animated animate__bounce header__logo">
                 <img src="img/logo.png" alt="" class="header__logo-img">
                 <span class="header__logo-span">The Answers</span> 
                 <!-- /.header__logo-span -->

@@ -8,14 +8,16 @@
                 v-model="member_name"
                 type="text" 
                 id="login"
+                placeholder="Никнейм"
                 >
                 <label for="">Придумайте пароль</label>
                 <input 
                 v-model="member_password" 
                 type="password" 
                 id="password"
+                placeholder="Пароль"
                 >
-                <button type="button" v-on:click="registration();">Зарегестрироваться</button>
+                <button type="button" v-on:click="registration();">Регистрация</button>
             </form>
         </div>
     </div>
