@@ -6,6 +6,7 @@ import Members from '../views/Members';
 import Question from '../views/Question';
 import Login from '../views/personal_account/login';
 import Registration from '../views/personal_account/registration';
+import AddQuestion from '../views/AddQuestion';
 
 Vue.use(Router);
 
@@ -44,6 +45,11 @@ export default new Router({
             path: '/registration',
             name: 'Registration',
             component: Registration
+        },
+        {
+            path: '/addquestion',
+            name: 'AddQuestion',
+            component: AddQuestion
         }
     ]
 })

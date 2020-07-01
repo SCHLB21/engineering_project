@@ -251,6 +251,11 @@
   outline: none;
 }
 
+.main .content__header-heading button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .main .content__header-instruments {
   margin-top: 35px;
 }

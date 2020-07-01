@@ -4,7 +4,7 @@
             <div class="content__header-heading">
                 <h1 class="heading__headline">Вопросы</h1>
                 <!-- /.heading -->
-                <button class="heading__add-question">Задать вопросы</button>
+                <button class="heading__add-question"><router-link to="/addquestion">Задать вопросы</router-link></button>
                 <!-- /.add-question -->
             </div>
             <!-- /.content__header-heading -->
@@ -69,8 +69,6 @@ export default {
             for(let i=0; i < members.length;i++){
                 if(this.members[i].member_id == member_id){
                     return members[i].member_name
-                }else{
-                    return 'Аноним'
                 }
             }
         },
