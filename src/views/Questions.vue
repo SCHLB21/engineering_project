@@ -71,6 +71,9 @@ export default {
                     return members[i].member_name
                 }
             }
+            if(member_id==''){
+                return 'Аноним'
+            }
         },
         getLink: function(link){
             return '/question/'+link

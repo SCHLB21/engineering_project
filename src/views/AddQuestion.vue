@@ -27,7 +27,7 @@
                 rows="10" 
                 placeholder="Введите вопрос"
                 ></textarea><br>
-                <button v-on:click="addQuestion();">Задать вопрос</button>
+                <button type="button" v-on:click="addQuestion();">Задать вопрос</button>
             </form>
         </div>
     </div>
@@ -51,12 +51,17 @@ export default {
             this.question_text &&
             this.question_headline !='' && 
             this.question_headline){
-            const member_id = sessionStorage['member_id'];
             const question_date = new Date();
             const question_headline = this.question_headline;
             const question_id = Math.random().toString(36).substr(2, 12);
             const question_marks = this.question_marks;
             const question_text = this.question_text;
+            if(sessionStorage['member_id']){
+                alert('he')
+                var member_id = sessionStorage['member_id'];
+            }else{
+                var member_id = '';
+            }
             db.collection('questions ').add({member_id, question_date, question_headline, question_id, question_marks, question_text})
             this.answer_text = '';
             window.location.href = '#/';
