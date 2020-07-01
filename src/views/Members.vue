@@ -7,6 +7,7 @@
                 <div class="member__statistic">
                     <span class="member__number-questions">100 вопросов</span>
                     <span class="member__number-answers">1 ответ</span>
+                    <button class="delete-member" v-if="checkStatus()" v-on:click="deleteMember(member.id);">Удалить участника</button>
                 </div>
             </section>
         </div>
@@ -27,6 +28,17 @@ export default {
       }
     },
     methods:{
+      checkStatus: function(){
+        if(sessionStorage['member_status']=='admin'){
+          return true
+        }else{
+          return false
+        }
+      },
+      deleteMember: function(doc_id){
+        console.log(doc_id)
+        db.collection('members').doc(doc_id).delete()
+      }
         // addMember: function(){
         //     alert('Добавлен');
         //     const member_id = Math.random().toString(36).substr(2, 12);
